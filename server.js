@@ -10,6 +10,11 @@ app.post('/webhook/netcore', (req, res) => {
   res.status(200).send('Webhook received');
 });
 
+app.get('/webhook/netcore', (req, res) => {
+  res.status(200).send('Webhook endpoint is live');
+});
+
+
 app.listen(port, () => {
   console.log(`🚀 Server running on port ${port}`);
 });
